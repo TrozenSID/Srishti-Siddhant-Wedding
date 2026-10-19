@@ -51,11 +51,29 @@ function ScratchReveal({ revealed, onReveal }: ScratchRevealProps) {
   const keyboardStepRef = useRef(0);
   const triggeredRef = useRef(false);
   const [celebration, setCelebration] = useState(false);
+  const [showScrollPrompt, setShowScrollPrompt] = useState(false);
+  const revealScrollYRef = useRef(0);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (!showScrollPrompt) return;
+
+    const handleScroll = () => {
+      if (Math.abs(window.scrollY - revealScrollYRef.current) > 24) {
+        setShowScrollPrompt(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [showScrollPrompt]);
 
   function completeReveal() {
     if (triggeredRef.current) return;
     triggeredRef.current = true;
     drawingRef.current = false;
+    revealScrollYRef.current = window.scrollY;
+    setShowScrollPrompt(true);
     setCelebration(true);
     onReveal();
     window.setTimeout(() => setCelebration(false), 4200);
@@ -196,6 +214,59 @@ function ScratchReveal({ revealed, onReveal }: ScratchRevealProps) {
         ))}
         <span className="burst-message">The date is revealed!</span>
       </div>
+
+      {showScrollPrompt && (
+        <motion.div
+          className="scratch-scroll-prompt"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          role="status"
+          aria-live="polite"
+          style={{
+            textAlign: "center",
+            marginTop: "26px",
+            color: "#98713D",
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "inherit",
+              fontSize: "13px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              margin: "0 0 7px",
+            }}
+          >
+            ✦ There's more to discover ✦
+          </p>
+          <p
+            style={{
+              fontSize: "14px",
+              lineHeight: 1.7,
+              margin: "0 0 10px",
+              color: "#806B50",
+            }}
+          >
+            Scroll down to explore the rest of our wedding invitation.
+          </p>
+          <motion.span
+            animate={reduceMotion ? { y: 0 } : { y: [0, 7, 0] }}
+            transition={
+              reduceMotion
+                ? { duration: 0 }
+                : { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
+            }
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <ArrowDown size={23} strokeWidth={1.5} />
+          </motion.span>
+        </motion.div>
+      )}
     </div>
   );
 }
