@@ -1,0 +1,21 @@
+SIDDHANT & SRISHTI — WEDDING INVITATION V8
+
+1. Extract this ZIP into a new folder.
+2. Open the extracted project folder (the one containing package.json) in VS Code.
+3. Run: npm install
+4. Run: npm run dev
+5. Visit: http://localhost:3000
+
+Current version includes:
+- Full-screen palace gates, with a desktop landscape image and a mobile portrait image.
+- Lord Ganesha and his blessing line within the left carved gate panel; SS and the couple's names within the right panel.
+- Slow outward-opening doors and a forward camera move into the mandap.
+- Corrected names for both sets of parents.
+- A scratch-locked invitation: the remaining pages appear only after the foil is scratched clear.
+- The couple's supplied 93-second background-music MP3, which starts when the visitor opens the gates. Use the header music control to pause or resume it.
+
+The RSVP form is still a front-end preview only. It does not save guest responses. A secure database and private admin dashboard are still required before using this for real guest RSVPs.
+
+The source has been syntax/CSS parsed and the bundled audio and ZIP have been checked. A complete Next.js production build was not run because npm dependencies could not be downloaded in the packaging environment.
+
+V8: Haldi and Wedding Day image frames now fill consistently; parents are shown mother-first; supplied soundtrack is used.
