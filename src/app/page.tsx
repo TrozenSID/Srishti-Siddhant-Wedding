@@ -253,7 +253,7 @@ export default function Home() {
 
   return (
     <main className={opened ? "wedding-page" : "invitation-entry"}>
-      <audio ref={musicRef} src="/audio/wedding-background-music.mp3" loop preload="auto" aria-label="Wedding background music selected by the couple" />
+      <audio ref={musicRef} src="/Wedding_Card/audio/wedding-background-music.mp3" loop preload="auto" aria-label="Wedding background music selected by the couple" />
       {!opened ? (
         <section className={`intro-screen royal-gate-screen ${opening ? "gate-opening" : ""} ${entering ? "gate-entering" : ""}`}>
           <div className="intro-halo" />
@@ -264,7 +264,7 @@ export default function Home() {
             <button type="button" className="royal-gate" onClick={openInvite} disabled={opening} aria-label="Open the royal palace gates to enter the wedding invitation">
               <span className="gate-leaf gate-leaf-left">
                 <span className="gate-inner-ornament gate-ganesha-plaque">
-                  <Image src="/images/ganesha.webp" alt="Lord Ganesha" width={220} height={240} priority />
+                  <Image src="/Wedding_Card/images/ganesha.webp" alt="Lord Ganesha" width={220} height={240} priority />
                   <small>With the blessings of Lord Ganesha</small>
                 </span>
                 <span className="gate-hinge hinge-left" />
@@ -330,7 +330,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.2 }}
             >
-              <Image src="/images/couple-portrait.png" alt="Siddhant and Srishti in their chosen wedding outfits" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
+              <Image src="/Wedding_Card/images/couple-portrait.png" alt="Siddhant and Srishti in their chosen wedding outfits" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
             </motion.div>
             <div className="hero-bottom-caption">A JOURNEY OF LOVE · FAMILY · FOREVER</div>
           </section>
@@ -427,7 +427,7 @@ export default function Home() {
           <section id="venue" className="venue-section section-shell">
             <motion.div {...revealMotion} className="venue-inner">
               <div className="venue-art">
-                <Image src="/images/couple-walking.webp" alt="Siddhant and Srishti walking together through a royal palace courtyard" fill sizes="(max-width: 760px) 92vw, 48vw" />
+                <Image src="/Wedding_Card/images/couple-walking.webp" alt="Siddhant and Srishti walking together through a royal palace courtyard" fill sizes="(max-width: 760px) 92vw, 48vw" />
                 <span className="venue-art-caption">A new journey begins</span>
               </div>
               <div className="venue-copy">
@@ -441,7 +441,7 @@ export default function Home() {
           </section>
 
           <footer className="closing-section">
-            <Image className="closing-art" src="/images/couple-seated.webp" alt="Siddhant and Srishti seated together in the palace courtyard" fill sizes="100vw" />
+            <Image className="closing-art" src="/Wedding_Card/images/couple-seated.webp" alt="Siddhant and Srishti seated together in the palace courtyard" fill sizes="100vw" />
             <div className="closing-backdrop" />
             <div className="closing-content">
               <p className="eyebrow light">With love</p>
