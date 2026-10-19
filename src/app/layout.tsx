@@ -8,15 +8,15 @@ const previewImage = `${siteUrl}/images/wedding-whatsapp-preview.jpg`;
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
 
-  title: "Siddhant & Srishti | A Royal Wedding Invitation",
+  title: "Siddhant & Srishti | A Beautiful Beginning",
 
   description:
-    "With the blessings of our families, Siddhant & Srishti invite you to celebrate their wedding. Open your invitation and discover the celebrations.",
+    "With the love and blessings of our families, we invite you to be part of our special day. Come celebrate love, happiness and togetherness.",
 
   openGraph: {
-    title: "Siddhant & Srishti | A Royal Wedding Invitation",
+    title: "Siddhant & Srishti | A Beautiful Beginning",
     description:
-      "With the blessings of our families, we invite you to celebrate our wedding. Open your invitation and discover the celebrations.",
+      "With the love and blessings of our families, we invite you to be part of our special day. Come celebrate love, happiness and togetherness.",
     url: siteUrl,
     siteName: "Siddhant & Srishti",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: previewImage,
         width: 1200,
         height: 630,
-        alt: "A royal palace wedding celebration for Siddhant & Srishti",
+        alt: "Siddhant & Srishti - A Beautiful Beginning",
       },
     ],
     locale: "en_IN",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Siddhant & Srishti | A Royal Wedding Invitation",
+    title: "Siddhant & Srishti | A Beautiful Beginning",
     description:
-      "With the blessings of our families, we invite you to celebrate our wedding.",
+      "With the love and blessings of our families, we invite you to be part of our special day.",
     images: [previewImage],
   },
 };
