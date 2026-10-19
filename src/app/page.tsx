@@ -384,7 +384,7 @@ export default function Home() {
                     gridColumn: "1 / -1",
                     width: "100%",
                     textAlign: "center",
-                    marginTop: "8px",
+                    marginTop: "-16px",
                     color: "#98713D",
                   }}
                 >
