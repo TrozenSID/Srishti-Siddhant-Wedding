@@ -91,7 +91,7 @@ img { display: block; }
   min-height: 100svh; position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .82fr); gap: clamp(24px, 4vw, 74px); align-items: center;
   padding: 112px 7vw 82px; background: linear-gradient(120deg, #2e3e32, #71806a 52%, #d2a77f); color: #fff3dc;
 }
-.hero-bg { position: absolute; inset: 0; background: url('/images/palace-courtyard.png') 22% 42% / cover no-repeat; opacity: .42; filter: saturate(.9); }
+.hero-bg { position: absolute; inset: 0; background: url('/Wedding_Card/images/palace-courtyard.png') 22% 42% / cover no-repeat; opacity: .42; filter: saturate(.9); }
 .hero-vignette { position: absolute; inset: 0; background: linear-gradient(90deg, #1e3028ed 0%, #26392dd9 43%, #29382d88 74%, #29382d25 100%), linear-gradient(0deg, #17251e99, transparent 38%); }
 .hero::after { content: ""; position: absolute; z-index: 3; bottom: -1px; left: 0; right: 0; height: 105px; background: linear-gradient(0deg, #f0e5d3 0%, transparent 100%); pointer-events: none; }
 .hero-copy { min-width: 0; max-width: 790px; position: relative; z-index: 4; padding: 16px 0 28px; }
@@ -403,7 +403,7 @@ img { display: block; }
 .royal-gate { position: absolute; inset: 0; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; transform-style: preserve-3d; }
 .gate-leaf {
   position: absolute; top: 0; bottom: 0; width: 50%; display: block; overflow: visible;
-  background-image: url('/images/royal-gate.webp'); background-repeat: no-repeat; background-size: 200% 100%;
+  background-image: url('/Wedding_Card/images/royal-gate.webp'); background-repeat: no-repeat; background-size: 200% 100%;
   backface-visibility: hidden; transform-style: preserve-3d;
   transition: transform 1.9s cubic-bezier(.18,.72,.16,1), filter 1.9s ease;
 }
@@ -495,7 +495,7 @@ img { display: block; }
 .gate-stage { aspect-ratio: 16 / 9; }
 .gate-stage::before {
   content: ''; position: absolute; inset: 4% 7%; z-index: -1;
-  background: linear-gradient(135deg,#4b3b2b33,#17251b22), url('/images/event-wedding.webp') center 44% / cover no-repeat;
+  background: linear-gradient(135deg,#4b3b2b33,#17251b22), url('/Wedding_Card/images/event-wedding.webp') center 44% / cover no-repeat;
   border: 1px solid #d5b878; box-shadow: inset 0 0 50px #1c17104a;
 }
 .gate-depth-glow { z-index: -2; }
@@ -585,7 +585,7 @@ main > audio { display: none; }
 
 @media (max-width: 760px) {
   .royal-gate-screen { padding: 0; gap: 0; }
-  .gate-leaf { background-image: url('/images/royal-gate-mobile.webp'); background-size: 200% 100%; }
+  .gate-leaf { background-image: url('/Wedding_Card/images/royal-gate-mobile.webp'); background-size: 200% 100%; }
   .gate-ganesha-plaque { left: 54%; width: 84%; }
   .gate-ganesha-plaque img { width: min(82%,125px); max-height: 22vh; }
   .gate-ganesha-plaque small { max-width: 92%; margin-top: 3px; font-size: clamp(6px,1.7vw,8px); line-height: 1.35; letter-spacing: .07em; }
