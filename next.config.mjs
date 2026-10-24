@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: "/Wedding_Card",
+  basePath: "/Srishti-Siddhant-Wedding",
   images: { unoptimized: true },
   trailingSlash: true,
 };
