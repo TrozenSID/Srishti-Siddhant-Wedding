@@ -275,7 +275,7 @@ export default function Home() {
 
   return (
     <main className={opened ? "wedding-page" : "invitation-entry"}>
-      <audio ref={musicRef} src="/Wedding_Card/audio/wedding-background-music.mp3" loop preload="auto" aria-label="Wedding background music selected by the couple" />
+      <audio ref={musicRef} src="/Srishti-Siddhant-Wedding/audio/wedding-background-music.mp3" loop preload="auto" aria-label="Wedding background music selected by the couple" />
       {!opened ? (
         <section className={`intro-screen royal-gate-screen ${opening ? "gate-opening" : ""} ${entering ? "gate-entering" : ""}`}>
           <div className="intro-halo" />
@@ -286,7 +286,7 @@ export default function Home() {
             <button type="button" className="royal-gate" onClick={openInvite} disabled={opening} aria-label="Open the royal palace gates to enter the wedding invitation">
               <span className="gate-leaf gate-leaf-left">
                 <span className="gate-inner-ornament gate-ganesha-plaque">
-                  <Image src="/Wedding_Card/images/ganesha.webp" alt="Lord Ganesha" width={220} height={240} priority />
+                  <Image src="/Srishti-Siddhant-Wedding/images/ganesha.webp" alt="Lord Ganesha" width={220} height={240} priority />
                   <small>With the blessings of Lord Ganesha</small>
                 </span>
                 <span className="gate-hinge hinge-left" />
@@ -295,9 +295,9 @@ export default function Home() {
                 <span className="gate-inner-ornament gate-couple-plaque">
                   <span className="gate-monogram">SS</span>
                   <span className="gate-floral-divider" aria-hidden="true">✿</span>
-                  <strong>Siddhant</strong>
-                  <i>&amp;</i>
                   <strong>Srishti</strong>
+                  <i>&amp;</i>
+                  <strong>Siddhant</strong>
                   <small>Invite you to celebrate</small>
                 </span>
                 <span className="gate-hinge hinge-right" />
@@ -342,7 +342,7 @@ export default function Home() {
               <p className="eyebrow light">With the blessings of our families</p>
               <div className="hero-rule"><span>✦</span></div>
               <p className="the-wedding">We invite you to celebrate the wedding of</p>
-              <h2>Siddhant <em>&</em> Srishti</h2>
+              <h2>Srishti <em>&</em> Siddhant</h2>
               <p className="hero-invitation-line">A royal celebration of love, family and forever.</p>
               <a className="scroll-cue" href="#date"><ArrowDown size={18} /><span>Scroll to discover</span></a>
             </motion.div>
@@ -352,7 +352,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.2 }}
             >
-              <Image src="/Wedding_Card/images/couple-portrait.png" alt="Siddhant and Srishti in their chosen wedding outfits" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
+              <Image src="/Srishti-Siddhant-Wedding/images/couple-portrait.png" alt="Srishti and Siddhant in their chosen wedding outfits" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
             </motion.div>
             <div className="hero-bottom-caption">A JOURNEY OF LOVE · FAMILY · FOREVER</div>
           </section>
@@ -417,17 +417,17 @@ export default function Home() {
               <p className="eyebrow">With the blessings of our parents</p>
               <div className="parents-grid">
                 <div className="parent-family">
-                  <span>Groom's parents</span>
-                  <h2>{wedding.groomParents}</h2>
-                </div>
-                <div className="parent-divider"><span>✦</span></div>
-                <div className="parent-family">
                   <span>Bride's parents</span>
                   <h2>{wedding.brideParents}</h2>
                 </div>
+                <div className="parent-divider"><span>✦</span></div>
+                <div className="parent-family">
+                  <span>Groom's parents</span>
+                  <h2>{wedding.groomParents}</h2>
+                </div>
               </div>
               <div className="ornate-rule"><span>✦</span></div>
-              <p className="blessing-text">Together with their families, Siddhant &amp; Srishti invite you to share in the joy of their wedding celebration.</p>
+              <p className="blessing-text">Together with their families, Srishti &amp; Siddhant invite you to share in the joy of their wedding celebration.</p>
             </motion.div>
           </section>
 
@@ -483,7 +483,7 @@ export default function Home() {
           <section id="venue" className="venue-section section-shell">
             <motion.div {...revealMotion} className="venue-inner">
               <div className="venue-art">
-                <Image src="/Wedding_Card/images/couple-walking.webp" alt="Siddhant and Srishti walking together through a royal palace courtyard" fill sizes="(max-width: 760px) 92vw, 48vw" />
+                <Image src="/Srishti-Siddhant-Wedding/images/couple-walking.webp" alt="Srishti and Siddhant walking together through a royal palace courtyard" fill sizes="(max-width: 760px) 92vw, 48vw" />
                 <span className="venue-art-caption">A new journey begins</span>
               </div>
               <div className="venue-copy">
@@ -497,19 +497,19 @@ export default function Home() {
           </section>
 
           <footer className="closing-section">
-            <Image className="closing-art" src="/Wedding_Card/images/couple-seated.webp" alt="Siddhant and Srishti seated together in the palace courtyard" fill sizes="100vw" />
+            <Image className="closing-art" src="/Srishti-Siddhant-Wedding/images/couple-seated.webp" alt="Srishti and Siddhant seated together in the palace courtyard" fill sizes="100vw" />
             <div className="closing-backdrop" />
             <div className="closing-content">
               <p className="eyebrow light">With love</p>
               <div className="closing-monogram">S <i>&amp;</i> S</div>
-              <h2>Siddhant &amp; Srishti</h2>
+              <h2>Srishti &amp; Siddhant</h2>
               <p>Your presence, affection and blessings will make this new journey even more beautiful.</p>
               <div className="ornate-rule"><span>✦</span></div>
               <small>21 · 11 · 2026</small>
               <div className="closing-contact">
                 <span>For any queries, please contact</span>
-                <a href="tel:+917060368382">+91 7060368382</a>
-                <a href="tel:+917060122652">+91 7060122652</a>
+                <a href="tel:+918006445002">+91 8006445002</a>
+                <a href="tel:+919720452735">+91 97204 52735</a>
               </div>
             </div>
             <div className="petal petal-one">✿</div>
