@@ -85,8 +85,8 @@ export const wedding = {
       schedule: [
         { label: "Baraat departure", time: "3:00 PM" },
         { label: "Dinner", time: "6:30 PM" },
-        { label: "Pheras", time: "9:30 PM" },
-        { label: "Varmala", time: "After pheras" },
+        { label: "Pheras", time: "11:30 PM" },
+        
       ],
     },
   ],
