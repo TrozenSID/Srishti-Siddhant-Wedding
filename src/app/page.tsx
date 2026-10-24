@@ -442,7 +442,7 @@ export default function Home() {
           <section id="celebrations" className="events-section section-shell">
             <motion.div {...revealMotion}>
               <p className="eyebrow">The Wedding Celebrations</p>
-              <h2>Five beautiful days</h2>
+              <h2>Five beautiful wedding festivities</h2>
               <p className="section-intro">Join us for the moments, rituals and celebrations that bring our families together.</p>
               <div className="event-grid">
                 {wedding.events.map((event, index) => (
